@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import Message from './Message'
 
 import { register } from '../actions/userActions'
 
@@ -39,7 +40,10 @@ const Signup = ({ history }) => {
   }
 
   return (
+    
     <div className='container'>
+      {/* Error massage component */}
+      <Message variant='danger'>{error}</Message>
       <p>.</p>
       <p>.</p>
       <div className='app-wrapper'>
