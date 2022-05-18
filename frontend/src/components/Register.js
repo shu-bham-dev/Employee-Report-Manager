@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import Message from './Message'
+import './Register.css'
 
 import { register } from '../actions/userActions'
 
